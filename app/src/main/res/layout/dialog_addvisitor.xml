@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/minHeight"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите данные:"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/visitorNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Имя должника"
+        android:inputType="textPersonName"
+        android:minHeight="@dimen/minHeight" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tableNumberET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="номер дома должника"
+            android:inputType="number"
+            android:minHeight="@dimen/minHeight" />
+
+        <EditText
+            android:id="@+id/bookTimeET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Время сдачи долга"
+            android:inputType="time" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/visitorPhoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        android:minHeight="@dimen/minHeight" />
+
+    <EditText
+        android:id="@+id/visitorEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Что должен"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/minHeight" />
+
+    <Button
+        android:id="@+id/loadImageButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Загрузить изображение"
+        />
+
+    <ImageView
+        android:id="@+id/previewIV"
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_accessible_24"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Добавить" />
+
+
+</LinearLayout>
